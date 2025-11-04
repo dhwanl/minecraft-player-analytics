@@ -68,4 +68,4 @@ This project requires two separate Jupyter notebooks running in the same directo
 This project was developed to apply the complete data science workflow (data wrangling, exploration, clustering, modeling, and interactive communication) as taught in the **DSCI 100: Introduction to Data Science** course. The R-for-wrangling and Python-for-dashboarding workflow is a practical application of the concepts covered.
 
 ## Project File Structure
-![Project Structure Diagram](images/project-structure.drawio.png)
+![Project Structure Diagram](images/project_structure.drawio.png)
