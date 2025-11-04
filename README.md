@@ -16,7 +16,8 @@ This dashboard moves beyond simple data exploration and answers three core busin
 2.  **How do they play?** The *Player Persona* (K-Means clustering) analysis segments players into distinct groups (e.g., "Casual Players," "Power Users"), allowing the product team to understand their different behaviors and needs.
 3.  **Where is the business opportunity?** The *Subscription Predictor* (Logistic Regression) provides a tool to identify which non-subscribed players are most likely to convert, allowing the marketing team to target their efforts effectively.
 
-### Dashboard Features
+## Dashboard Features
+
 * **Part 1: Data Preparation (R)**
     * Raw data is loaded from `data/players.csv` and `data/sessions.csv`.
     * Data is cleaned, merged, and analyzed using R's `tidyverse` and `lubridate`.
