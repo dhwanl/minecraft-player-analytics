@@ -4,13 +4,14 @@
 
 This project is an interactive dashboard for analyzing a dataset of Minecraft players, built using a modern, two-language workflow. It demonstrates using **R for data wrangling/statistics** and **Python for interactive dashboards and machine learning.**
 
-The project transforms raw player demographic data (`players.csv`) and session logs (`sessions.csv`) into a clean, unified dataset. This clean data is then used to power an interactive dashboard built *directly inside a Jupyter Lab notebook* using Python's `ipywidgets`.
+The project transforms raw player data from a `data/` folder into a clean, unified dataset. This clean data is then used to power an interactive dashboard built *directly inside a Jupyter Lab notebook* using Python's `ipywidgets`.
 
 ### Dashboard Features
 * **Part 1: Data Preparation (R)**
-    * Raw data is loaded, cleaned, and merged using R's `tidyverse` and `lubridate`.
+    * Raw data is loaded from `data/players.csv` and `data/sessions.csv`.
+    * Data is cleaned, merged, and analyzed using R's `tidyverse` and `lubridate`.
     * A K-Means clustering analysis is performed in R to segment players into four distinct "personas."
-    * The final, clean dataset (`minecraft_dashboard_data.csv`) is saved to disk.
+    * The final, clean dataset (`minecraft_dashboard_data.csv`) is saved to the main project folder.
 
 * **Part 2: Interactive Dashboard (Python)**
     * **Interactive Plots:** The dashboard provides `plotly` charts with `ipywidgets` controls to filter the player data by age and experience level in real-time.
@@ -35,22 +36,22 @@ This project requires two separate Jupyter notebooks running in the same directo
 * Jupyter Lab
 * An R kernel installed for Jupyter
 * A Python 3 kernel installed for Jupyter
-* The raw data files: `players.csv` and `sessions.csv`
+* A folder named `data` containing the raw data files: `players.csv` and `sessions.csv`.
 
 ### Step 1: Data Preparation (R Notebook)
 1.  Create a new notebook named `01_Data_Prep.ipynb` (or similar) using an **R kernel**.
 2.  Run the package installer cell to get `tidyverse`, `lubridate`, and `recipes`.
 3.  Run the main data preparation cell. This will:
-    * Load `players.csv` and `sessions.csv`.
+    * Load `data/players.csv` and `data/sessions.csv`.
     * Clean, merge, and cluster the data.
-    * Save a new file: `minecraft_dashboard_data.csv`.
+    * Save a new file: `minecraft_dashboard_data.csv` (in the main folder).
 4.  You can close this notebook once the CSV is created.
 
 ### Step 2: The Interactive Dashboard (Python Notebook)
 1.  Create a second notebook named `02_Dashboard.ipynb` (or similar) using a **Python 3 kernel**.
 2.  Run the package installer cell to get `pandas`, `scikit-learn`, `plotly`, and `ipywidgets`.
 3.  Run the "Load Data & Train Model" cell. This loads `minecraft_dashboard_data.csv` and trains the `scikit-learn` model.
-4.  Run the remaining cells one by one. Each cell will display a part of the dashboard (the interactive plot, the persona plot, and the prediction tool) in its output.
+4.  Run the remaining cells one by one. Each cell will display a part of the dashboard.
 
 ## Project Context & Acknowledgements
 
