@@ -68,16 +68,4 @@ This project requires two separate Jupyter notebooks running in the same directo
 This project was developed to apply the complete data science workflow (data wrangling, exploration, clustering, modeling, and interactive communication) as taught in the **DSCI 100: Introduction to Data Science** course. The R-for-wrangling and Python-for-dashboarding workflow is a practical application of the concepts covered.
 
 ## Project File Structure
-
-minecraft-player-analytics/
-│
-├── README.md                    (This project's "front page" and documentation)
-│
-├── 01_Data_Prep.ipynb           (R notebook: READS from data/, WRITES to the root)
-├── 02_Dashboard.ipynb           (Python notebook: READS the processed .csv)
-│
-├── data/                        (Folder for all raw, untouched data)
-│   ├── players.csv
-│   └── sessions.csv
-│
-└── minecraft_dashboard_data.csv   (The PROCESSED file created by 01_Data_Prep)
+![Project Structure Diagram](images/project-structure.drawio.png)
