@@ -5,9 +5,6 @@
 This project is an interactive dashboard for analyzing a dataset of Minecraft players, built using a modern, two-language workflow. It demonstrates using **R for data wrangling/statistics** and **Python for interactive dashboards and machine learning.**
 
 The project transforms raw player data from a `data/` folder into a clean, unified dataset. This clean data is then used to power an interactive dashboard built *directly inside a Jupyter Lab notebook* using Python's `ipywidgets`.
-![R](httpsimg.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-![Python](httpsimg.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Jupyter](httpsimg.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
 ## Project Purpose & Audience
 
