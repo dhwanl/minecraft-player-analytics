@@ -6,6 +6,16 @@ This project is an interactive dashboard for analyzing a dataset of Minecraft pl
 
 The project transforms raw player data from a `data/` folder into a clean, unified dataset. This clean data is then used to power an interactive dashboard built *directly inside a Jupyter Lab notebook* using Python's `ipywidgets`.
 
+## Project Purpose & Audience
+
+The goal of this project is to create an actionable insights tool for a game development studio. The intended audience is a **Product Manager** or **Marketing Lead** who needs to make data-driven decisions.
+
+This dashboard moves beyond simple data exploration and answers three core business questions:
+
+1.  **Who are our players?** The overview dashboard provides a clear look at player demographics and engagement patterns.
+2.  **How do they play?** The *Player Persona* (K-Means clustering) analysis segments players into distinct groups (e.g., "Casual Players," "Power Users"), allowing the product team to understand their different behaviors and needs.
+3.  **Where is the business opportunity?** The *Subscription Predictor* (Logistic Regression) provides a tool to identify which non-subscribed players are most likely to convert, allowing the marketing team to target their efforts effectively.
+
 ### Dashboard Features
 * **Part 1: Data Preparation (R)**
     * Raw data is loaded from `data/players.csv` and `data/sessions.csv`.
