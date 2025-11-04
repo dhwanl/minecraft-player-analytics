@@ -1,8 +1,8 @@
-# Polyglot Data Analysis: An Interactive Minecraft Player Dashboard
+# Data Analysis: An Interactive Minecraft Player Dashboard
 
 ## Project Overview
 
-This project is an interactive dashboard for analyzing a dataset of Minecraft players, built using a modern, two-language ("polyglot") workflow. It demonstrates using **R for data wrangling/statistics** and **Python for interactive dashboards and machine learning.**
+This project is an interactive dashboard for analyzing a dataset of Minecraft players, built using a modern, two-language workflow. It demonstrates using **R for data wrangling/statistics** and **Python for interactive dashboards and machine learning.**
 
 The project transforms raw player demographic data (`players.csv`) and session logs (`sessions.csv`) into a clean, unified dataset. This clean data is then used to power an interactive dashboard built *directly inside a Jupyter Lab notebook* using Python's `ipywidgets`.
 
